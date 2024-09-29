@@ -26,3 +26,12 @@ main {
 .offcanvas-top{
     height: fit-content;
 }
+
+/* Estilo para las estrellas */
+.fa-star {
+font-size: 20px; 
+color: lightgray;
+}
+.fa-star.checked {
+ color: orange; /* Color para estrellas seleccionadas */
+}
