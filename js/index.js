@@ -30,7 +30,11 @@ document.getElementById('btnBuscar').addEventListener('click', function() {
         const stars = Math.round(movie.vote_average);
         let starHTML = '';
         for (let i = 1; i <= 5; i++) {
-            starHTML += `<span class="fa fa-star ${i <= stars ? 'checked' : ''}"></span>`;
+            if (i <= stars) {
+                starHTML += `<span class="fa fa-star checked"></span>`;
+            } else {
+                starHTML += `<span class="fa fa-star"></span>`;
+            }
         }
 
         li.innerHTML = `
