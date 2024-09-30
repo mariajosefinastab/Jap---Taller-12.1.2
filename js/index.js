@@ -35,7 +35,11 @@ document.getElementById('btnBuscar').addEventListener('click', function() {
             } else {
                 starHTML += `<span class="fa fa-star"></span>`;
             }
-        }
+        } 
+
+        /* IDEM EL FOR ANTERIOR       for (let i = 1; i <= 5; i++) {
+            starHTML += `<span class="fa fa-star ${i <= stars ? 'checked' : ''}"></span>`;
+        }*/
 
         li.innerHTML = `
             <strong>${movie.title}</strong><br>
